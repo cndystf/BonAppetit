@@ -1,3 +1,5 @@
+import css from 'bootstrap/dist/css/bootstrap.min.css';
+
 class AppBar extends HTMLElement {
 
     constructor() {
@@ -12,6 +14,7 @@ class AppBar extends HTMLElement {
     render() {
       this.shadowDOM.innerHTML = `
         <style>
+        ${css}
           * {
             margin: 0;
             padding: 0;
@@ -20,16 +23,16 @@ class AppBar extends HTMLElement {
           :host {
             display: block;
             width: 100%;
-            background-color: cornflowerblue;
             color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          }
-          h2 {
-            padding: 16px;
+            text-align:center;
+            font-size: 35px;
           }
         </style>
-        
-        <h2>Bon Appetit</h2>
+        <div class="container-fluid" style="padding:30px">
+          <a class="navbar-brand">
+            <img src="/images/nav.png" alt="logo" width="30" height="24" class="d-inline-block"> Bon Appetit 
+            </a>
+        </div>
       `;
     }
   }

@@ -27,7 +27,7 @@ class MealList extends HTMLElement {
       <style>
         .placeholder {
           font-weight: lighter;
-          color: rgba(0, 0, 0, 0.5);
+          color: white;
           -webkit-user-select: none;
           -moz-user-select: none;
           -ms-user-select: none;

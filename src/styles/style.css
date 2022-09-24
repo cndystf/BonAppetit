@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,9 +8,14 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/public/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
-  
+
+
   main {
     width: 90%;
     max-width: 800px;

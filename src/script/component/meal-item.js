@@ -24,6 +24,7 @@ class MealItem extends HTMLElement {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             overflow: hidden;
+            background-color: white;
           }
           .fan-art-meal {
             width: 100%;
@@ -50,7 +51,7 @@ class MealItem extends HTMLElement {
         <img class="fan-art-meal" src="${this._meal.strMealThumb}" alt="Fan Art">
         <div class="meal-info">
           <h2>${this._meal.strMeal}</h2>
-          <p>${this._meal.strInstructions}</p>
+          <p>How to cook : ${this._meal.strInstructions}</p>
         </div>
       `;
     }

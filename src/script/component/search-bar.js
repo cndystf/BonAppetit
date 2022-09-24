@@ -26,28 +26,30 @@ class SearchBar extends HTMLElement {
             max-width: 800px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 16px;
-            border-radius: 5px;
             display: flex;
             position: sticky;
             top: 10px;
             background-color: white;
+            border-radius: 20px;
+            // margin-top : 5rem;
           }
           .search-container > input {
             width: 75%;
             padding: 16px;
             border: 0;
-            border-bottom: 1px solid cornflowerblue;
+            border-bottom: 1px solid #3E3822;
             font-weight: bold;
+            font-family: 'Poppins', sans-serif;
           }
           .search-container > input:focus {
             outline: 0;
-            border-bottom: 2px solid cornflowerblue;
+            border-bottom: 2px solid #3E3822;
           }
           .search-container > input:focus::placeholder {
             font-weight: bold;
           }
           .search-container >  input::placeholder {
-            color: cornflowerblue;
+            color: grey;
             font-weight: normal;
           }
           .search-container > button {
@@ -55,10 +57,11 @@ class SearchBar extends HTMLElement {
             cursor: pointer;
             margin-left: auto;
             padding: 16px;
-            background-color: cornflowerblue;
+            background-color: #3E3822;
             color: white;
             border: 0;
-            text-transform: uppercase;
+            border-radius: 60px;
+            font-family: 'Poppins', sans-serif;
           }
           @media screen and (max-width: 550px) {
             .search-container {
@@ -76,7 +79,7 @@ class SearchBar extends HTMLElement {
         </style>
         
         <div id="search-container" class="search-container">
-          <input placeholder="Type something..." id="searchElement" type="search">
+          <input placeholder="Type here..." id="searchElement" type="search">
           <button id="searchButtonElement" type="submit">Search</button>
         </div>
       `;
