@@ -30,7 +30,7 @@ class AppBar extends HTMLElement {
         </style>
         <div class="container-fluid" style="padding:30px">
           <a class="navbar-brand">
-            <img src="/images/nav.png" alt="logo" width="30" height="24" class="d-inline-block"> Bon Appetit 
+            <img src="./images/nav.png" alt="logo" width="30" height="24" class="d-inline-block"> Bon Appetit 
             </a>
         </div>
       `;

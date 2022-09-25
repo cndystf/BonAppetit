@@ -7,3 +7,4 @@ import main from './script/view/main.js';
 // import nav from './images/nav.png';
 
 document.addEventListener('DOMContentLoaded', main);
+// document.querySelector(#navImage).src = nav;
